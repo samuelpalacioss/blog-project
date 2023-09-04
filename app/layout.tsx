@@ -3,6 +3,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Nav from '@/components/Nav';
+import { ThemeProvider } from '@/context/theme-provider';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -19,8 +20,10 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={cn(inter.className, 'min-h-screen antialised')}>
-        <Nav />
-        {children}
+        <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
+          <Nav />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
