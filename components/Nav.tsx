@@ -8,7 +8,7 @@ export default function Nav() {
           href={'/'}
           className='text-xl font-semibold border-2 border-b-4 rounded-md border-r-2 border-gray-900 px-2 py-1 transition-all hover:-translate-y-[2px] dark:border-white'
         >
-          logo
+          samu
         </Link>
         <div className='dropdown'>dropdwon</div>
       </div>
