@@ -18,25 +18,20 @@ export default function Nav() {
               href={'/'}
               className='text-foreground/70 transition-colors hover:text-foreground/90'
             >
-              Lorem
+              Latest
+            </Link>
+
+            <Link
+              href={'/'}
+              className='text-foreground/70 transition-colors hover:text-foreground/90'
+            >
+              Posts
             </Link>
             <Link
               href={'/'}
               className='text-foreground/70 transition-colors hover:text-foreground/90'
             >
-              Lorem
-            </Link>
-            <Link
-              href={'/'}
-              className='text-foreground/70 transition-colors hover:text-foreground/90'
-            >
-              Lorem
-            </Link>
-            <Link
-              href={'/'}
-              className='text-foreground/70 transition-colors hover:text-foreground/90'
-            >
-              Lorem
+              Resources
             </Link>
           </nav>
         </div>
