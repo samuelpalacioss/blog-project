@@ -1,4 +1,5 @@
 import GithubButton from '@/components/GithubButton';
+import TechIcon from '@/components/TechIconTooltip';
 import {
   SiNextdotjs,
   SiTypescript,
@@ -26,7 +27,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='space-y-6 pt-16 md:py-24 lg:py-32'>
+      <section className='space-y-8 pt-16 md:py-24 lg:py-32'>
         <div className='container max-w-[56rem] text-center flex flex-col gap-4 items-center'>
           <h2 className='text-3xl md:text-4xl lg:text-6xl font-semibold'>
             My stack
@@ -36,16 +37,21 @@ export default function Home() {
           </p>
         </div>
         <div className='container flex items-center justify-center gap-4 md:gap-6 max-w-[85%]'>
-          {/* Nextjs icon */}
-          <SiNextdotjs className='h-9 w-9 sm:h-12 sm:w-12' />
-          {/* Typescript icon */}
-          <SiTypescript className='h-9 w-9 sm:h-12 sm:w-12' />
-          {/* Prisma icon */}
-          <SiPrisma className='h-9 w-9 sm:h-12 sm:w-12' />
-          {/* Tailwind icon */}
-          <SiTailwindcss className='h-9 w-9 sm:h-12 sm:w-12' />
-          {/* Express icon */}
-          <SiExpress className='h-9 w-9 sm:h-12 sm:w-12' />
+          <TechIcon label='Nextjs'>
+            <SiNextdotjs className='h-9 w-9 sm:h-12 sm:w-12' />
+          </TechIcon>
+          <TechIcon label='Typescript'>
+            <SiTypescript className='h-9 w-9 sm:h-12 sm:w-12' />
+          </TechIcon>
+          <TechIcon label='Prisma'>
+            <SiPrisma className='h-9 w-9 sm:h-12 sm:w-12' />
+          </TechIcon>
+          <TechIcon label='Tailwind'>
+            <SiTailwindcss className='h-9 w-9 sm:h-12 sm:w-12' />
+          </TechIcon>
+          <TechIcon label='Express'>
+            <SiExpress className='h-9 w-9 sm:h-12 sm:w-12' />
+          </TechIcon>
         </div>
       </section>
     </main>
