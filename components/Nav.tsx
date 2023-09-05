@@ -4,6 +4,7 @@ import { ThemeToggle } from './ThemeToggle';
 export default function Nav() {
   return (
     <header className='sticky top-0 inset-x-0 h-fit py-3 border-b bg-white dark:bg-gray-950 z-[10]'>
+      {/* Need mobile nav */}
       <div className='container max-w-7xl flex items-center justify-between gap-2'>
         {/* Logo and links */}
         <div className='flex items-center gap-10'>
@@ -18,7 +19,7 @@ export default function Nav() {
               href={'/'}
               className='text-foreground/70 transition-colors hover:text-foreground/90'
             >
-              Latest
+              Projects
             </Link>
 
             <Link
@@ -31,7 +32,7 @@ export default function Nav() {
               href={'/'}
               className='text-foreground/70 transition-colors hover:text-foreground/90'
             >
-              Resources
+              Latest
             </Link>
           </nav>
         </div>
