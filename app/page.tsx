@@ -13,13 +13,14 @@ export default function Home() {
     <main className=''>
       <section className='space-y-6 pt-24 lg:py-40'>
         <div className='container max-w-5xl text-center flex flex-col gap-4 items-center justify-center'>
+          <span className='text-2xl font-semibold tracking-tight'>Hi, I'm</span>
           <h1 className='text-4xl md:text-5xl lg:text-7xl font-semibold'>
-            Welcome to my blog :)
+            Samuel Palacios
           </h1>
           <p className='max-w-[41rem] sm:text-lg md:text-xl text-muted-foreground sm:leading-8'>
-            Hi! I'm Samuel, a software engineer who loves to build things for
-            the web. Here i share my journey as a developer, what I'm learning
-            and the things I build.
+            A software engineer student who loves to build things for the web.
+            Here I share my journey as a developer, what I'm learning and the
+            things I build.
           </p>
           <div className='flex items-center'>
             <GithubButton text='Github' />
@@ -27,7 +28,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='space-y-8 pt-16 md:py-24 lg:py-32'>
+      <section className='space-y-8 py-16 md:py-24 lg:py-32'>
         <div className='container max-w-[56rem] text-center flex flex-col gap-4 items-center'>
           <h2 className='text-3xl md:text-4xl lg:text-6xl font-semibold'>
             My stack
