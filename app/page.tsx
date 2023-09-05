@@ -28,7 +28,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='space-y-8 py-16 md:py-24 lg:py-32'>
+      <section className='space-y-8 pt-16 pb-28 md:py-24 lg:py-32'>
         <div className='container max-w-[56rem] text-center flex flex-col gap-4 items-center'>
           <h2 className='text-3xl md:text-4xl lg:text-6xl font-semibold'>
             My stack
@@ -56,7 +56,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='space-y-6 pt-16 md:py-24 lg:py-32'>
+      <section className='space-y-6 pt-16 md:pt-0 lg:py-32'>
         <div className='container max-w-5xl flex flex-col gap-4 text-center items-center'>
           <h2 className='text-3xl md:text-4xl lg:text-6xl font-semibold'>
             About me
