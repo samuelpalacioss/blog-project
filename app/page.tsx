@@ -11,8 +11,8 @@ import {
 export default function Home() {
   return (
     <main className=''>
-      <section className='space-y-6 pt-20 md:pt-24 lg:py-40'>
-        <div className='container max-w-[64rem] text-center flex flex-col gap-4 items-center justify-center'>
+      <section className='space-y-6 pt-24 lg:py-40'>
+        <div className='container max-w-5xl text-center flex flex-col gap-4 items-center justify-center'>
           <h1 className='text-4xl md:text-5xl lg:text-7xl font-semibold'>
             Welcome to my blog :)
           </h1>
@@ -54,6 +54,29 @@ export default function Home() {
           </TechIcon>
         </div>
       </section>
+
+      <section className='space-y-6 pt-16 md:py-24 lg:py-32'>
+        <div className='container max-w-5xl flex flex-col gap-4 text-center items-center'>
+          <h2 className='text-3xl md:text-4xl lg:text-6xl font-semibold'>
+            About me
+          </h2>
+          <p className='max-w-[80%] sm:text-lg md:text-xl text-muted-foreground leading-normal sm:leading-6'>
+            You may be wondering who I am, so here's a little bit about me.
+          </p>
+        </div>
+      </section>
+
+      {/*<section className='space-y-6 pt-16 md:py-24 lg:py-32'>
+        <div className='container max-w-5xl flex flex-col items-center gap-4'>
+          <h2 className='text-3xl md:text-4xl lg:text-6xl font-semibold'>
+            Some things I've built
+          </h2>
+          <p className='max-w-[80%] sm:text-lg md:text-xl text-muted-foreground leading-normal sm:leading-6'>
+            Hope you like them!
+          </p>
+         <ProjectCard /> 
+        </div>
+      </section>/*/}
     </main>
   );
 }
