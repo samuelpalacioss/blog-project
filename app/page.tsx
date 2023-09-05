@@ -85,7 +85,7 @@ export default function Home() {
             <p className='max-w-[95%] sm:max-w-[40rem] text-muted-foreground leading-normal sm:leading-8'>
               So, if you&apos;re searching for a dynamic developer who brings
               boundless energy and a dash of humor to the table, look no
-              further! Let's connect and make some digital magic happen
+              further! Let&apos;s connect and make some digital magic happen
               together. 🚀💻✨
             </p>
           </div>
