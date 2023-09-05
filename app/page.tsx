@@ -61,9 +61,21 @@ export default function Home() {
           <h2 className='text-3xl md:text-4xl lg:text-6xl font-semibold'>
             About me
           </h2>
-          <p className='max-w-[80%] sm:text-lg md:text-xl text-muted-foreground leading-normal sm:leading-6'>
-            You may be wondering who I am, so here's a little bit about me.
-          </p>
+          <div className='flex flex-col items-center text-center gap-6 sm:text-lg md:text-xl'>
+            <p className='max-w-[70%] text-muted-foreground leading-normal sm:leading-6'>
+              Hello! I'm Samuel, a 20-year-old software engineer student who
+              loves building things with code. My first experience with web
+              development started in early 2020, when I decided to try to create
+              a website for my mom's business.
+            </p>
+            <p className='max-w-[70%] text-muted-foreground leading-normal sm:leading-6'>
+              Since then I've been honing my skills and learning different
+              technologies from frontend to backend,{' '}
+              <span className='italic font-semibold'>
+                lately also I've been interested in data science
+              </span>
+            </p>
+          </div>
         </div>
       </section>
 
