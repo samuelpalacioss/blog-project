@@ -7,6 +7,7 @@ import {
   SiPrisma,
   SiTailwindcss,
   SiExpress,
+  SiPython
 } from 'react-icons/si';
 
 export default function Home() {
@@ -54,6 +55,9 @@ export default function Home() {
             </TechIcon>
             <TechIcon label='Express'>
               <SiExpress className='h-9 w-9 sm:h-12 sm:w-12' />
+            </TechIcon>
+            <TechIcon label='Python'>
+              <SiPython className='h-9 w-9 sm:h-12 sm:w-12' />
             </TechIcon>
           </div>
         </div>
