@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { githubProfile } from '@/config/siteConfig';
+import { siteConfig } from '@/config/siteConfig';
 import { cn } from '@/lib/utils';
 import { buttonVariants } from './ui/button';
 import { AiFillGithub } from 'react-icons/ai';
@@ -11,7 +11,7 @@ type GithubButtonProps = {
 export default function GithubButton({ text }: GithubButtonProps) {
   return (
     <Link
-      href={githubProfile}
+      href={siteConfig.githubProfile}
       target='_blank'
       rel='noreferrer'
       className={cn(buttonVariants({ variant: 'outline', size: 'lg' }))}

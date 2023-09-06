@@ -1,5 +1,9 @@
 import Link from 'next/link';
 import { ThemeToggle } from './ThemeToggle';
+import { SiMaildotru } from 'react-icons/si';
+import { siteConfig } from '@/config/siteConfig';
+import { buttonVariants } from './ui/button';
+import { cn } from '@/lib/utils';
 
 export default function Nav() {
   return (
@@ -36,7 +40,19 @@ export default function Nav() {
             </Link>
           </nav>
         </div>
-        <div className='dropdown'>
+        <div className='flex items-center gap-2'>
+          <Link
+            href={`mailto:${siteConfig.email}`}
+            target='_blank'
+            rel='noreferrer'
+            aria-abel='Send me an email'
+            className={cn(
+              buttonVariants({ size: 'icon', variant: 'outline' }),
+              'border-0 hover:border'
+            )}
+          >
+            <SiMaildotru className='h-5 w-5' />
+          </Link>
           <ThemeToggle />
         </div>
       </div>
