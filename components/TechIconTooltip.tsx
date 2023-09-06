@@ -14,7 +14,7 @@ export default function TechIcon({ label, children }: TechIconTooltipProps) {
   return (
     <TooltipProvider>
       <Tooltip>
-        <TooltipTrigger>{children}</TooltipTrigger>
+        <TooltipTrigger aria-label={`${label} icon`}>{children}</TooltipTrigger>
         <TooltipContent>{label}</TooltipContent>
       </Tooltip>
     </TooltipProvider>
