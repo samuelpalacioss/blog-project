@@ -35,7 +35,7 @@ export default function Home() {
           <h2 className='text-3xl md:text-4xl lg:text-6xl font-semibold'>
             My stack
           </h2>
-          <p className='max-w-[80%] sm:text-lg text-muted-foreground leading-normal sm:leading-6'>
+          <p className='max-w-[80%] sm:text-lg text-muted-foreground sm:leading-6'>
             Here&apos;s some of the technologies I&apos;ve been working with
             recently:
           </p>
@@ -64,26 +64,26 @@ export default function Home() {
             About me
           </h2>
           <div className='flex flex-col gap-4 sm:text-lg'>
-            <p className='max-w-[95%] sm:max-w-[40rem] text-muted-foreground leading-normal sm:leading-8'>
+            <p className='max-w-[95%] sm:max-w-[40rem] text-muted-foreground sm:leading-8'>
               Hi there! I&apos;m Samuel and I love building exceptional things
               for the web. My first experience with web development started in
               early 2020, when I decided to create a website for my mom&apos;s
               business and I&apos;ve been hooked ever since.
             </p>
-            <p className='max-w-[95%] sm:max-w-[40rem] text-muted-foreground leading-normal sm:leading-8'>
+            <p className='max-w-[95%] sm:max-w-[40rem] text-muted-foreground sm:leading-8'>
               Over the years I&apos;ve been honing my skills, constantly
               practicing and learning different technologies ranging from
               front-end to back-end. Lately, I&apos;ve also been interested in
               data science.
             </p>
-            <p className='max-w-[95%] sm:max-w-[40rem] text-muted-foreground leading-normal sm:leading-8'>
+            <p className='max-w-[95%] sm:max-w-[40rem] text-muted-foreground sm:leading-8'>
               In 2022, I gratuated from 4Geeks Academy 12-week intensive Full
               Stack Developer Bootcamp program, solidifying my skills and
               commitment to this exciting field. I&apos;m seeking a full-time
               role where I can help a company achieve its goals while continuing
               my personal and professional growth.
             </p>
-            <p className='max-w-[95%] sm:max-w-[40rem] text-muted-foreground leading-normal sm:leading-8'>
+            <p className='max-w-[95%] sm:max-w-[40rem] text-muted-foreground sm:leading-8'>
               So, if you&apos;re searching for a dynamic developer who brings
               boundless energy and a dash of humor to the table, look no
               further! Let&apos;s connect and make some digital magic happen
