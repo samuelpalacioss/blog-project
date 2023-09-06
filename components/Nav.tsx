@@ -45,7 +45,7 @@ export default function Nav() {
             href={`mailto:${siteConfig.email}`}
             target='_blank'
             rel='noreferrer'
-            aria-abel='Send me an email'
+            aria-label='Send me an email'
             className={cn(
               buttonVariants({ size: 'icon', variant: 'outline' }),
               'border-0 hover:border'
