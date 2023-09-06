@@ -24,62 +24,38 @@ export default function ProjectCard({
 }: //   children,
 ProjectCardProps) {
   return (
-    <Card className='flex flex-col sm:flex-row sm:items-center max-w-2xl justify-between pb-6 sm:pt-6'>
-      <div className='project-info sm:order-2 sm:flex-grow'>
-        <CardHeader className='space-y-2'>
-          <CardTitle className='text-2xl'>{title}</CardTitle>
-          <CardDescription className='max-w-[95%] leading-normal'>
-            {description}
-          </CardDescription>
-        </CardHeader>
-        <CardContent className='max-w-[90%] gap-4 md:gap-6'>
-          <ul className='flex flex-wrap'>
-            {technologies.map((tech) => (
-              <li
-                key={tech}
-                className='rounded-full px-3 py-1 bg-gray-900 text-white dark:bg-zinc-300 dark:text-gray-950 text-xs font-medium mr-2 last:mr-0'
-              >
-                {tech}
-              </li>
-            ))}
-          </ul>
-        </CardContent>
+    <>
+      <div className='flex flex-col gap-6 sm:flex-row sm:gap-12 sm:py-10 sm:items-center max-w-2xl justify-between p-6 rounded-lg transition-all border '>
+        <div className='project-info sm:order-2 sm:flex-grow'>
+          <div className='project-header space-y-2 pb-6'>
+            <h3 className='text-2xl sm:text-3xl font-semibold'>{title}</h3>
+            <p className='text-sm sm:text-base text-muted-foreground max-w-[95%] leading-normal'>
+              {description}
+            </p>
+          </div>
+          <div className='project-content max-w-[90%] gap-4 md:gap-6'>
+            <ul className='flex flex-wrap'>
+              {technologies.map((tech) => (
+                <li
+                  key={tech}
+                  className='rounded-full px-3 py-1 bg-muted text-xs sm:text-sm font-medium mr-2 last:mr-0'
+                >
+                  {tech}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <div className='project-image sm:order-1'>
+          <Image
+            alt={`${title} project`}
+            src={image}
+            className='object-contain rounded border-2 border-slate-500/10 transition-colors hover:border-slate-500/30'
+            width={200}
+            height={48}
+          />
+        </div>
       </div>
-      <div className='project-image px-6 sm:order-1'>
-        <Image
-          alt={`${title} project`}
-          src={image}
-          className='object-contain rounded border-2 border-slate-500/10 transition-colors hover:border-slate-500/30'
-          width={200}
-          height={48}
-        />
-      </div>
-    </Card>
-    // <Card className='container flex max-w-2xl items-center justify-between gap-2 p-6 '>
-    //   {/* Project image*/}
-    //   {/* <Image
-    //     alt={`${title} project`}
-    //     src={image}
-    //     className='object-contain rounded border-2 border-slate-500/10 transition-colors hover:border-slate-500/30'
-    //     width={200}
-    //     height={48}
-    //   /> */}
-    //   <CardHeader className='flex flex-col gap-2'>
-    //     <CardTitle>{title}</CardTitle>
-    //     <CardDescription>{description}</CardDescription>
-    //   </CardHeader>
-    //   <CardContent>
-    //     <div className='flex flex-row max-w[90%]'>
-    //       {technologies.map((tech) => (
-    //         <span
-    //           key={tech}
-    //           className='px-3 py-1 bg-gray-900 dark:bg-zinc-300 font-semibold'
-    //         >
-    //           {tech}
-    //         </span>
-    //       ))}
-    //     </div>
-    //   </CardContent>
-    // </Card>
+    </>
   );
 }
