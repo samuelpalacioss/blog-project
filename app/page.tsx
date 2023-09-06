@@ -1,4 +1,5 @@
 import GithubButton from '@/components/GithubButton';
+import ProjectCard from '@/components/ProjectCard';
 import TechIcon from '@/components/TechIconTooltip';
 import {
   SiNextdotjs,
@@ -91,13 +92,18 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='space-y-6 pt-16 md:py-24'>
+      <section className='space-y-6 py-16 md:py-24'>
         <div className='container max-w-5xl flex flex-col gap-4'>
           <h2 className='text-3xl md:text-4xl lg:text-6xl font-semibold'>
             Some things I&apos;ve built
           </h2>
 
-          {/* <ProjectCard />  */}
+          <ProjectCard
+            title='Psicoreinventar'
+            description='Psychology appointment app'
+            image='https://fakeimg.pl/600x400/60ab7b/e8e8e8?text=hola'
+            technologies={['React', 'SQLAlchemy']}
+          />
         </div>
       </section>
     </main>
